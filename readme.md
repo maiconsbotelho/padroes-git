@@ -1,4 +1,52 @@
-# 📌 Padrões de Nomes de Branches e Commits
+# 📌 Comandos GIT, Padrões de Branches e Commits
+
+## 💻 **Principais Comandos Git**
+
+### 🔧 **Comandos Básicos**
+
+- `git init` → Inicializa um repositório Git no diretório atual.
+- `git clone <url-do-repositorio>` → Clona um repositório remoto para o seu diretório local.
+- `git status` → Exibe o status atual do repositório (arquivos modificados, não rastreados, etc.).
+- `git add <arquivo>` → Adiciona um arquivo específico ao índice de preparação.
+- `git add .` → Adiciona todos os arquivos modificados ao índice de preparação.
+- `git commit -m "mensagem"` → Realiza um commit com a mensagem fornecida.
+- `git push` → Envia as alterações locais para o repositório remoto.
+- `git pull` → Atualiza o repositório local com as alterações do repositório remoto.
+- `git fetch` → Baixa as últimas alterações do repositório remoto sem aplicá-las.
+- `git merge <branch>` → Mescla as alterações de uma branch em outra.
+- `git branch` → Lista todas as branches locais.
+- `git branch <nome-da-branch>` → Cria uma nova branch.
+- `git checkout <branch>` → Altera para a branch especificada.
+- `git checkout -b <nome-da-branch>` → Cria uma nova branch e alterna para ela.
+- `git log` → Exibe o histórico de commits.
+
+### 🔄 **Comandos para Gerenciamento de Branches**
+
+- `git merge <branch>` → Mescla uma branch em outra.
+- `git rebase <branch>` → Aplica as alterações de uma branch sobre outra.
+- `git branch -d <branch>` → Exclui uma branch local.
+- `git branch -D <branch>` → Força a exclusão de uma branch local, mesmo se não estiver totalmente mesclada.
+- `git reset --hard` → Desfaz todas as alterações locais e redefine o repositório para o último commit.
+- `git reset <commit>` → Reseta o repositório para o estado de um commit específico.
+
+### 🔀 **Comandos para Resolução de Conflitos**
+
+- `git mergetool` → Abre uma ferramenta de merge para resolver conflitos.
+- `git diff` → Exibe as diferenças entre o repositório local e o remoto, ou entre commits.
+
+### 🧹 **Comandos de Limpeza e Manutenção**
+
+- `git clean -fd` → Remove arquivos não rastreados no diretório de trabalho.
+- `git gc` → Realiza uma coleta de lixo, otimizando o repositório.
+
+### 🌐 **Comandos para Repositórios Remotos**
+
+- `git remote add <nome> <url-do-repositorio>` → Adiciona um repositório remoto.
+- `git remote -v` → Exibe os repositórios remotos configurados.
+- `git push <remote> <branch>` → Envia a branch local para o repositório remoto.
+- `git pull <remote> <branch>` → Baixa as últimas alterações de uma branch no repositório remoto.
+
+---
 
 ## 🌿 **Padrões de Nomes de Branches**
 
@@ -126,48 +174,4 @@
 - `fix(PROJ-456): corrigir erro ao salvar usuário` → Exemplo de correção de bug vinculado a um ticket.
 - `task(PROJ-789): ajustar layout da página inicial` → Exemplo de tarefa vinculada a um ticket.
 
-## 💻 **Principais Comandos Git**
-
-### 🔧 **Comandos Básicos**
-
-- `git init` → Inicializa um repositório Git no diretório atual.
-- `git clone <url-do-repositorio>` → Clona um repositório remoto para o seu diretório local.
-- `git status` → Exibe o status atual do repositório (arquivos modificados, não rastreados, etc.).
-- `git add <arquivo>` → Adiciona um arquivo específico ao índice de preparação.
-- `git add .` → Adiciona todos os arquivos modificados ao índice de preparação.
-- `git commit -m "mensagem"` → Realiza um commit com a mensagem fornecida.
-- `git push` → Envia as alterações locais para o repositório remoto.
-- `git pull` → Atualiza o repositório local com as alterações do repositório remoto.
-- `git fetch` → Baixa as últimas alterações do repositório remoto sem aplicá-las.
-- `git merge <branch>` → Mescla as alterações de uma branch em outra.
-- `git branch` → Lista todas as branches locais.
-- `git branch <nome-da-branch>` → Cria uma nova branch.
-- `git checkout <branch>` → Altera para a branch especificada.
-- `git checkout -b <nome-da-branch>` → Cria uma nova branch e alterna para ela.
-- `git log` → Exibe o histórico de commits.
-
-### 🔄 **Comandos para Gerenciamento de Branches**
-
-- `git merge <branch>` → Mescla uma branch em outra.
-- `git rebase <branch>` → Aplica as alterações de uma branch sobre outra.
-- `git branch -d <branch>` → Exclui uma branch local.
-- `git branch -D <branch>` → Força a exclusão de uma branch local, mesmo se não estiver totalmente mesclada.
-- `git reset --hard` → Desfaz todas as alterações locais e redefine o repositório para o último commit.
-- `git reset <commit>` → Reseta o repositório para o estado de um commit específico.
-
-### 🔀 **Comandos para Resolução de Conflitos**
-
-- `git mergetool` → Abre uma ferramenta de merge para resolver conflitos.
-- `git diff` → Exibe as diferenças entre o repositório local e o remoto, ou entre commits.
-
-### 🧹 **Comandos de Limpeza e Manutenção**
-
-- `git clean -fd` → Remove arquivos não rastreados no diretório de trabalho.
-- `git gc` → Realiza uma coleta de lixo, otimizando o repositório.
-
-### 🌐 **Comandos para Repositórios Remotos**
-
-- `git remote add <nome> <url-do-repositorio>` → Adiciona um repositório remoto.
-- `git remote -v` → Exibe os repositórios remotos configurados.
-- `git push <remote> <branch>` → Envia a branch local para o repositório remoto.
-- `git pull <remote> <branch>` → Baixa as últimas alterações de uma branch no repositório remoto.
+---
